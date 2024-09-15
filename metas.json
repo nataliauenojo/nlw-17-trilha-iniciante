@@ -1,0 +1,22 @@
+[
+  {
+    "value": "Ler pelo menos 15 minutos por dia",
+    "checked": false
+  },
+  {
+    "value": "Andar pelo menos 20 minutos ao dia",
+    "checked": false
+  },
+  {
+    "value": "Beber 3L de água por dia",
+    "checked": false
+  },
+  {
+    "value": "Medidar pelo menos 2 minutos ao dia",
+    "checked": false
+  },
+  {
+    "value": "Meditar pelo menos 2 minutos por dia",
+    "checked": false
+  }
+]
