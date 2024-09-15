@@ -48,7 +48,21 @@ const listarMeta = async () => {
 }
 
 const metasRealizadas = async () =>{
-    const realizadas = metas.filter()
+    const realizadas = metas.filter((meta) => {
+        return meta.checked;
+    })
+
+    if(realizadas.length == 0){
+        console.log('Não existem metas realizadas! :(');
+        return;
+    }
+
+    await select({
+        message: " Metas Realizadas",
+        choices: [...realizadas]
+    })
+
+
 
 }
 
@@ -89,6 +103,7 @@ const start = async () => {
                 await metasRealizadas();
                 break;
             case "sair":
+                console.log('Até a proxima!');
                 return;
         }
     }
